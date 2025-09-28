@@ -20,9 +20,9 @@ private: //declare private variables red,green, blue
     int blue;
 public:
     //setter functions
-    int setRed(int r) {red = r; return r;}
-    int setGreen(int g) {green = g; return g;}
-    int setBlue(int b) {blue = b; return b;}
+    void setRed(int r) {red = r;}
+    void setGreen(int g) {green = g;}
+    void setBlue(int b) {blue = b;}
     //getter functions
     int getRed() {return red;}
     int getGreen() {return green;}
