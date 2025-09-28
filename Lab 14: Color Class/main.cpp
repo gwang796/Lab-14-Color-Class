@@ -9,69 +9,63 @@
 #include <iomanip>
 using namespace std;
 
-int WIDTH = 15; //declare before class
+int WIDTH = 10; //declare before class
 
+//declare class Color
 class Color
 {
-private:
+private: //declare private variables red,green, blue
     int red;
-    int blue;
     int green;
+    int blue;
 public:
+    //setter functions
     int setRed(int r) {red = r; return r;}
     int setGreen(int g) {green = g; return g;}
     int setBlue(int b) {blue = b; return b;}
+    //getter functions
     int getRed() {return red;}
     int getGreen() {return green;}
     int getBlue() {return blue;}
-    void print(){
+    //print function to display data(int num is color number)
+    void print(int num){
+        cout << "Color#: " << num << endl;
         cout << setw(WIDTH) << "Red: " << red << endl;
         cout << setw(WIDTH) << "Green: " << green << endl;
         cout << setw(WIDTH) << "Blue: " << blue << endl;
     }
 };
 
-void print(Color);
-
 int main(int argc, const char * argv[]) {
+    //create Color objects with data
     Color one;
     one.setRed(155);
     one.setBlue(200);
     one.setGreen(100);
-    one.print();
-    //print(one);
+    one.print(1);
     
     Color two;
     two.setRed(25);
     two.setBlue(230);
     two.setGreen(180);
-    two.print();
-    //print(two);
+    two.print(2);
 
     Color three;
     three.setRed(255);
     three.setBlue(10);
     three.setGreen(80);
-    three.print();
-    //print(three);
+    three.print(3);
 
     Color four;
     four.setRed(60);
     four.setBlue(70);
     four.setGreen(195);
-    four.print();
-    //print(four);
+    four.print(4);
     
     Color five;
     five.setRed(145);
     five.setBlue(225);
     five.setGreen(250);
-    five.print();
-    //print(five);
+    five.print(5);
 
-
-}
-
-void print(Color c){
-    cout << c.getRed() << c.getGreen() << c.getBlue() << endl;
 }
