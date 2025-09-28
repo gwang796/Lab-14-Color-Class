@@ -27,7 +27,9 @@ public:
     int getRed() {return red;}
     int getGreen() {return green;}
     int getBlue() {return blue;}
-    //print function to display data(int num is color number)
+    //print function displays data of class objects
+    //argument: int num
+    //return: none
     void print(int num){
         cout << "Color#: " << num << endl;
         cout << setw(WIDTH) << "Red: " << red << endl;
